@@ -1,5 +1,6 @@
 /*speсification*/
 body{
+  overflow-x: hidden;
   font-family: 'PT Sans', sans-serif;
 }
 .navbar {
@@ -57,7 +58,7 @@ p, div, a, span {
 
 /*first screen*/
 .header {
-  color: black;
+  color: #000;
   padding-top: 50px;
   padding-bottom: 60px;
   background-image: url('../image/desktop.jpg');
@@ -98,13 +99,42 @@ p, div, a, span {
   margin-right: 18px;
 }
 .icons__item a {
-  color: #000;
+  color: #333;
   font-size: 42px;
-  transition: all 0.3s ease;
 }
 .icons__item a :hover{
   text-decoration: none;
-  color:#555;
+  transition: color 0.5s ease;
+}
+
+.icon_prof a :hover{
+  text-decoration: none;
+  color:#d500f9; 
+}
+
+.icon_exp a :hover{
+  text-decoration: none;
+  color:#f44336; 
+}
+
+.icon_edu a :hover{
+  text-decoration: none;
+  color:#00695c; 
+}
+
+.icon_skill a :hover{
+  text-decoration: none;
+  color:#76ff03; 
+}
+
+.icon_lang a :hover{
+  text-decoration: none;
+  color:#03a9f4; 
+}
+
+.icon_proj a :hover{
+  text-decoration: none;
+  color:#ff0000; 
 }
 
 .cv_image {
@@ -139,15 +169,30 @@ p, div, a, span {
 }
 
 .prof_icons__item a {
-  color: #000;
+  color:#333;
   font-size: 42px;
-  transition: all 0.3s ease;
 }
 
 .prof_icons__item a :hover{
   text-decoration: none;
-  color:#555;
+  transition: color 0.5s ease;
 }
+
+.github a :hover{
+  text-decoration: none;
+  color:#000; 
+}
+
+.xing a :hover{
+  text-decoration: none;
+  color:#0698a0; 
+}
+
+.linkedin a :hover{
+  text-decoration: none;
+  color:#0a66c2; 
+}
+
 
 /*Experience*/
 
@@ -190,6 +235,7 @@ p, div, a, span {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .skills_img {
@@ -301,5 +347,12 @@ p, div, a, span {
   line-height: 1.5em;
 }
 
+/* Scroll-smooth*/
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
 
 
