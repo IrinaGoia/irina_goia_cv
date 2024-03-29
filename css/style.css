@@ -1,0 +1,305 @@
+/*speсification*/
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.navbar {
+  padding-left: 4%;
+}
+.container {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  min-height: 600px;
+}
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h4 {
+  font-weight: 700;
+  color:black;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h2{
+  text-align: center;
+}
+
+p, div, a, span {
+ line-height: 1.3em; 
+}
+.title{
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.title__main{
+  font-size: 32px;
+}
+
+.title__text{
+  font-size: 20px;
+  padding-top: 40px;
+}
+.location {
+  font-size: medium;
+  color: #555;
+  margin-bottom: 10px;
+ }
+ .data {
+   font-size: small;
+ }
+
+/*first screen*/
+.header {
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-image: url('../image/desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.menu {
+  margin-top: 8px;
+}
+.logo {
+  width: 140px;
+}
+.menu__item {
+  margin: 0 10px;
+}
+
+.menu__item a {
+  font-size: 22px;
+  font-weight: 700;
+  color:black;
+}
+.offer {
+  margin-top: 140px;
+}
+
+.offer__title{
+  font-size: 72px;
+  margin-bottom: 15px;
+}
+.offer__profi {
+  font-size: 52px;
+  line-height: 1.3em;
+  margin-bottom: 25px;
+}
+
+.icons__item {
+  margin-right: 18px;
+}
+.icons__item a {
+  color: #000;
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+.icons__item a :hover{
+  text-decoration: none;
+  color:#555;
+}
+
+.cv_image {
+  display: block;
+  margin: 60px auto 0;
+  width: 400px;
+}
+
+/*Profile*/
+.profile{
+  padding-top: 40px;
+}
+.prof {
+  margin-top: 100px;
+}
+.profile__intro {
+  font-size: large;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+.foto {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  box-shadow: 1px 1px 20px rgba(80, 80, 80, 0.5);
+  transition: .5s;
+}
+
+.prof_icons__item {
+  margin-right: 50px;
+}
+
+.prof_icons__item a {
+  color: #000;
+  font-size: 42px;
+  transition: all 0.3s ease;
+}
+
+.prof_icons__item a :hover{
+  text-decoration: none;
+  color:#555;
+}
+
+/*Experience*/
+
+.exp {
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.experience__title {
+  font-size: medium;
+}
+.experience__text {
+  color: #555;
+  margin-top: 25px;
+}
+.duties {
+  margin-top: 10px;
+}
+.exp_location {
+ font-size: medium;
+ color: #555;
+ margin-bottom: 10px;
+}
+.exp_data {
+  font-size: small;
+}
+
+/*Education*/
+
+.education__title {
+  font-size: medium;
+}
+.edu {
+  margin-right: 80px;
+  margin-top: 50px;
+}
+
+/*Skills*/
+.skills_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills_img {
+  width: 100px;
+  margin: 100px 30px 0 30px;
+}
+
+
+
+/*Language*/
+.language{
+  padding-bottom: 150px;
+}
+.lang_bar {
+  padding: auto;
+  font-size: medium;
+}
+
+
+.progress-circle{
+  margin: auto;
+  font-size:20px;
+  position:relative;
+  padding:0;
+  width:5em;
+  height:5em;
+  background-color:#F2E9E1;
+  border-radius:50%;
+  line-height:5em
+}
+
+.progress-circle:after{
+  border:none;
+  position:absolute;
+  top:0.35em;
+  left:0.35em;
+  text-align:center;
+  display:block;
+  border-radius:50%;
+  width:4.3em;
+  height:4.3em;
+  background-color:#F8F8F8;
+  content:" "
+}
+
+.progress-circle span{
+  position:absolute;
+  line-height:5em;
+  width:5em;
+  text-align:center;
+  display:block;
+  color: black;
+  z-index:2
+}
+
+.left-half-clipper{
+  border-radius:50%;
+  width:5em;
+  height:5em;
+  position:absolute;
+  clip:rect(0, 5em, 5em, 2.5em)
+}
+
+.progress-circle.over50 .left-half-clipper{
+  clip:rect(auto,auto,auto,auto)
+}
+
+.value-bar{
+  position:absolute;
+  clip:rect(0, 2.5em, 5em, 0);
+  width:5em;
+  height:5em;
+  border-radius:50%;
+  border:0.45em solid black;
+  box-sizing:border-box
+}
+
+.progress-circle.over50 .first50-bar{
+  position:absolute;
+  clip:rect(0, 5em, 5em, 2.5em);
+  background-color:black;
+  border-radius:50%;
+  width:5em;
+  height:5em
+}
+
+.progress-circle:not(.over50) .first50-bar{
+  display:none
+}
+
+.progress-circle.p0 .value-bar{
+  display:none
+}
+
+/*Project*/
+
+.proj {
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.project__title {
+  font-size: medium;
+}
+.project__text {
+  color: #555;
+  margin-top: 25px;
+  font-size: large;
+  line-height: 1.5em;
+}
+
+
+
