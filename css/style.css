@@ -62,6 +62,7 @@ p, div, a, span {
    font-size: small;
  }
 
+
 /*first screen*/
 .header {
   color: #000;
@@ -92,11 +93,11 @@ p, div, a, span {
 }
 
 .offer__title{
-  font-size: 72px;
+  font-size: 62px;
   margin-bottom: 15px;
 }
 .offer__profi {
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.3em;
   margin-bottom: 25px;
 }
@@ -148,6 +149,7 @@ p, div, a, span {
   margin: 60px auto 0;
   width: 400px;
 }
+
 
 /*Profile*/
 .profile{
@@ -201,7 +203,6 @@ p, div, a, span {
 
 
 /*Experience*/
-
 .exp {
   margin-right: 30px;
   margin-top: 20px;
@@ -248,7 +249,6 @@ p, div, a, span {
   width: 100px;
   margin: 100px 30px 0 30px;
 }
-
 
 
 /*Language*/
@@ -307,13 +307,17 @@ p, div, a, span {
   text-align: center;
 }
 
-circle {
+.circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
-  animation: anim 4s;
+  
+}
+
+.circle.circle-animation {
+  animation: anim 3s;
 }
 
 svg {
